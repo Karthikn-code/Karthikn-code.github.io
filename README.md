@@ -28,7 +28,8 @@ Visit the live website: **[https://karthikn-code.github.io](https://karthikn-cod
 
 ## Here are some ScreenShots
 <br>
-<img width="1885" height="999" alt="image" src="https://github.com/user-attachments/assets/19220f23-532c-468e-a8b4-ab71771c3814" />
+<img width="1879" height="947" alt="image" src="https://github.com/user-attachments/assets/9778572f-5bb6-4a90-bf82-82dfaed579cc" />
+
 
 
 
