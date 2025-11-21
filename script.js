@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    
+
     // Add hover effect for project links
     document.querySelectorAll('.project-link').forEach(link => {
         link.addEventListener('mouseenter', function() {
