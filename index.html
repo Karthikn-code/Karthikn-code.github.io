@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">My Portfolio</div>
+            <div class="logo">Mr.Karthik N</div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -21,9 +22,16 @@
     <section id="hero">
         <div class="hero-content">
             <img src="karthik.jpg" alt="Karthik's Profile Picture" class="hero-profile-pic">
-            <h1>Welcome to My Creative World</h1>
+            <h1>Hi, I’m Karthik 👋<br>Web Developer | AI & DS Student | Problem Solver</h1>
             <p>Discover my projects and passion for web development.</p>
-            <a href="#projects" class="cta-button">Explore Projects</a>
+            <div class="hero-buttons">
+                <a href="#projects" class="cta-button">View Projects</a>
+                <a href="#" class="resume-button"><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Karthikn-code?tab=repositories" class="social-icon" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
         </div>
     </section>
 
@@ -31,7 +39,7 @@
         <section id="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>I'm a passionate web developer creating amazing digital experiences. This is my static website hosted on GitHub Pages, showcasing my skills and projects.</p>
+                <p>I’m Karthik, a Web Developer and AI & DS student. I enjoy building user-friendly web applications and experimenting with AI-powered solutions for real-world problems. Currently focused on improving my frontend skills and building projects that combine Web + AI.</p>
                 <img src="karthik.jpg" alt="Profile Image" class="profile-img">
             </div>
         </section>
@@ -41,14 +49,43 @@
                 <h2>My Projects</h2>
                 <div class="projects-grid">
                     <article class="project">
-                        <h3>Project 1</h3>
-                        <p>An innovative web application that solves real-world problems. Built with modern technologies.</p>
-                        <a href="#" class="project-link">View Project</a>
+                        <img src="modern blog.jpeg" alt="ModernBlog Mockup" class="project-image">
+                        <h3>ModernBlog</h3>
+                        <p>A modern, responsive blog website featuring articles on web development and design.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Bootstrap 5</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <p class="project-outcome">Developed a comprehensive blogging platform that provides valuable content to developers and designers, improving knowledge sharing in the tech community.</p>
+                        <a href="https://github.com/Karthikn-code/task-8" class="project-link">View Project</a>
                     </article>
                     <article class="project">
-                        <h3>Project 2</h3>
-                        <p>A responsive design project focusing on user experience and accessibility.</p>
-                        <a href="#" class="project-link">View Project</a>
+                        <img src="focuspad.jpeg" alt="FocusPad Mockup" class="project-image">
+                        <h3>FocusPad</h3>
+                        <p>A productivity task management app with progress tracking, analytics, and user profiles.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SVG</span>
+                        </div>
+                        <p class="project-outcome">Created an intuitive task management tool that helps users stay organized and track their daily progress with visual progress indicators and comprehensive analytics.</p>
+                        <a href="https://github.com/Karthikn-code/Task-2" class="project-link">View Project</a>
+                    </article>
+                    <article class="project">
+                        <img src="rest API.jpeg" alt="Books API Mockup" class="project-image">
+                        <h3>Books API</h3>
+                        <p>A complete REST API for managing a books library with full CRUD operations and web UI.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">HTML5</span>
+                        </div>
+                        <p class="project-outcome">Built a comprehensive backend API with full CRUD functionality, CORS support, and an interactive web interface for testing, demonstrating strong backend development skills.</p>
+                        <a href="https://github.com/Karthikn-code/Task-3" class="project-link">View Project</a>
                     </article>
                 </div>
             </div>
@@ -59,19 +96,14 @@
                 <h2>Contact</h2>
                 <p class="contact-intro">Get in touch! I'd love to hear from you.</p>
                 <p class="contact-email">Email: <a href="mailto:karthiknreddy372@gmail.com">karthiknreddy372@gmail.com</a></p>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+
                 
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Mr.Karthik N. made with ❤️| and Codes.</p>
     </footer>
 
     <script src="script.js"></script>

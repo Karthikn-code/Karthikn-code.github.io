@@ -1,0 +1,4 @@
+- [ ] Add GitHub, LinkedIn, and Email icons to footer
+- [ ] Change copyright text to "© 2024 Karthik | Built with ❤️ & code"
+- [ ] Add CSS styles for footer icons
+- [ ] Test the updated footer

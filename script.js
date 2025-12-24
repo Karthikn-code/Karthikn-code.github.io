@@ -53,4 +53,20 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1)';
         });
     });
+
+    // Typing animation for hero text
+    const typingText = document.getElementById('typing-text');
+    if (typingText) {
+        const text = typingText.innerHTML; // Use innerHTML to preserve <br>
+        typingText.innerHTML = '';
+        let i = 0;
+        const typeWriter = () => {
+            if (i < text.length) {
+                typingText.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100); // Adjust speed here
+            }
+        };
+        setTimeout(typeWriter, 1000); // Delay before starting
+    }
 });
