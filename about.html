@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Karthik | Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ambient-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Karthik N<span>.</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html" class="nav-active">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="karthik%20resume.pdf" target="_blank" class="nav-resume"><i class="fas fa-download"></i>
+                    Resume</a>
+            </div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main style="padding-top: 6rem; min-height: 80vh;">
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Background</h2>
+                    <p class="section-desc">A deeper look at who I am and what I do.</p>
+                </div>
+
+                <div class="about-grid reveal-up delay-1">
+                    <div class="about-text shiny-edge">
+                        <h3>My Journey</h3>
+                        <p>I blend engineering with design to create robust web solutions. Currently studying AI & Data
+                            Science, I leverage analytical thinking to solve complex problems cleanly and efficiently.
+                        </p>
+                        <p>My tech philosophy revolves around writing clean code, building intuitive user interfaces,
+                            and staying ahead of modern frontend and backend trends.</p>
+
+                        <div class="skills-container mt-4">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React (Learning)</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">AI & DS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="technical-skills" style="padding-bottom: 6rem;">
+            <div class="container">
+                <div class="section-header reveal-up text-center">
+                    <h2 class="section-title" style="margin-bottom: 3rem;">Technical Skills</h2>
+                </div>
+
+                <div class="skills-layout reveal-up delay-1">
+
+                    <div class="skill-category">
+                        <h3 class="category-red">Detected GitHub Languages</h3>
+                        <div class="skills-wrapper cat-blue" id="dynamic-languages-about">
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">Shell</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-green">Detected GitHub Topics (Frameworks)</h3>
+                        <div class="skills-wrapper cat-green" id="dynamic-topics-about">
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">Express.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-grey">Tools & Version Control</h3>
+                        <div class="skills-wrapper cat-grey">
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Makefile</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Proficiency Section -->
+        <section class="skill-proficiency" style="padding-bottom: 6rem;">
+            <div class="container">
+                <div class="proficiency-card shiny-edge reveal-up">
+                    <h2 class="card-title">Skill Proficiency</h2>
+                    <p class="card-subtitle">Calculated real-time from my GitHub commits & language data</p>
+                    <div class="proficiency-list" id="dynamic-skill-bars">
+                        <div style="opacity: 0.6; text-align: center; padding: 2rem 0;">Analyzing GitHub Repositories...
+                        </div>
+                        <!-- Bars injected here via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="index.html" class="logo">Karthik N<span>.</span></a>
+                <p>&copy; 2024 Karthik | Built with ❤️ & code</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/Karthikn-code" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/karthik-n-40146136a/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:karthiknreddy28@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=3"></script>
+</body>
+
+</html>

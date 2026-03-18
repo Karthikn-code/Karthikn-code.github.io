@@ -1,111 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Mr.Karthik N</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <title>Karthik. | Web Developer</title>
 
-    <section id="hero">
-        <div class="hero-content">
-            <img src="karthik.jpg" alt="Karthik's Profile Picture" class="hero-profile-pic">
-            <h1>Hi, I’m Karthik 👋<br>Web Developer | AI & DS Student | Problem Solver</h1>
-            <p>Discover my projects and passion for web development.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="cta-button">View Projects</a>
-                <a href="#" class="resume-button"><i class="fas fa-download"></i> Download Resume</a>
+    <!-- Premium Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Vibrant ambient background shapes for light theme -->
+    <div class="ambient-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Karthik N<span>.</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-active">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="karthik%20resume.pdf" target="_blank" class="nav-resume"><i class="fas fa-download"></i>
+                    Resume</a>
             </div>
-            <div class="social-icons">
-                <a href="https://github.com/Karthikn-code?tab=repositories" class="social-icon" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin fa-2x"></i></a>
-            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
         </div>
-    </section>
+    </nav>
 
     <main>
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I’m Karthik, a Web Developer and AI & DS student. I enjoy building user-friendly web applications and experimenting with AI-powered solutions for real-world problems. Currently focused on improving my frontend skills and building projects that combine Web + AI.</p>
-                <img src="karthik.jpg" alt="Profile Image" class="profile-img">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-text reveal-up">
+                    <div class="status-pill">
+                        <span class="pulse-dot"></span> Open to internships and full-time roles
+                    </div>
+                    <h1 class="hero-title">Crafting digital <br><span class="text-gradient">experiences</span> with
+                        precision.</h1>
+                    <p class="hero-subtitle">I'm Karthik, a Web Developer and AI & Data Science student focused on
+                        building scalable, user-centric, and highly performant applications.</p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Discover my work</a>
+                        <a href="https://github.com/Karthikn-code" target="_blank" class="btn btn-secondary"><i
+                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/karthik-n-40146136a/" target="_blank"
+                            class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="karthik%20resume.pdf" target="_blank" class="btn btn-secondary"><i
+                                class="fas fa-file-pdf"></i> Resume</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-up delay-1">
+                    <div class="profile-card shiny-edge">
+                        <img src="karthik.jpg" alt="Karthik N" class="profile-img">
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="projects">
+        <!-- About Section -->
+        <section class="about" id="about">
             <div class="container">
-                <h2>My Projects</h2>
+                <div class="section-header reveal-up text-center">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-desc">A deeper look at who I am and what I do.</p>
+                </div>
+
+                <div class="about-grid reveal-up delay-1" style="max-width: 900px; margin: 0 auto;">
+                    <div class="about-text shiny-edge">
+                        <div class="card-glow"></div>
+                        <h3>My Journey</h3>
+                        <p style="margin-bottom: 1.5rem;">I blend engineering with design to create robust web
+                            solutions. Currently studying AI & Data Science, I leverage analytical thinking to solve
+                            complex problems cleanly and efficiently.</p>
+                        <p style="margin-bottom: 2rem;">My tech philosophy revolves around writing clean code, building
+                            intuitive user interfaces, and staying ahead of modern frontend and backend trends.</p>
+
+                        <div class="skills-container">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React (Learning)</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">AI & DS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Premium Stats Section -->
+        <section class="dark-stats-section" id="stats">
+            <div class="container">
+                <div class="dark-stats-header reveal-up text-center">
+                    <h2 class="section-title">By The Numbers</h2>
+                    <p class="section-desc">Measurable impact through code, collaboration, and continuous learning</p>
+                </div>
+
+                <div class="dark-stats-grid reveal-up delay-1">
+                    <div class="dark-stat-card">
+                        <div class="dark-stat-icon-wrapper bg-blue-light">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="dark-stat-num"><span class="counter" id="stat-lines" data-target="11000">0</span>+
+                        </h3>
+                        <p class="dark-stat-title">Lines of Code</p>
+                    </div>
+
+                    <div class="dark-stat-card">
+                        <div class="dark-stat-icon-wrapper bg-green-light">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="dark-stat-num"><span class="counter" id="stat-commits" data-target="26">0</span>+
+                        </h3>
+                        <p class="dark-stat-title">GitHub Commits</p>
+                    </div>
+
+                    <div class="dark-stat-card">
+                        <div class="dark-stat-icon-wrapper bg-purple-light">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="dark-stat-num"><span class="counter" id="stat-projects" data-target="13">0</span>
+                        </h3>
+                        <p class="dark-stat-title">Production Projects</p>
+                    </div>
+
+                    <div class="dark-stat-card">
+                        <div class="dark-stat-icon-wrapper bg-orange-light">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="dark-stat-num"><span class="counter" data-target="95">0</span>%</h3>
+                        <p class="dark-stat-title">Code Quality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="tech-stack" id="tech">
+            <div class="container">
+                <div class="section-header reveal-up text-center">
+                    <h2 class="section-title">Tech Stack</h2>
+                    <div class="header-line"></div>
+                    <p class="section-desc">Modern technologies I use to build powerful, scalable applications</p>
+                </div>
+
+                <div class="tech-grid reveal-up delay-1">
+                    <!-- Languages -->
+                    <div class="tech-card shiny-edge">
+                        <div class="card-glow"></div>
+                        <div class="tech-badge badge-blue">GitHub Languages</div>
+                        <ul class="tech-list list-blue" id="dynamic-languages-index">
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <!-- Frameworks & Topics -->
+                    <div class="tech-card shiny-edge">
+                        <div class="card-glow"></div>
+                        <div class="tech-badge badge-green">Repo Topics</div>
+                        <ul class="tech-list list-green" id="dynamic-topics-index">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li style="opacity: 0.6; font-size: 0.85rem;">Add topics to repos to see them here!</li>
+                        </ul>
+                    </div>
+                    <!-- Tools -->
+                    <div class="tech-card shiny-edge">
+                        <div class="card-glow"></div>
+                        <div class="tech-badge badge-grey">Local Tools</div>
+                        <ul class="tech-list list-grey">
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Makefiles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Selected Work</h2>
+                    <p class="section-desc">A showcase of my recent technical projects.</p>
+                </div>
+
                 <div class="projects-grid">
-                    <article class="project">
-                        <img src="modern blog.jpeg" alt="ModernBlog Mockup" class="project-image">
-                        <h3>ModernBlog</h3>
-                        <p>A modern, responsive blog website featuring articles on web development and design.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">Bootstrap 5</span>
-                            <span class="tech-tag">JavaScript</span>
+                    <!-- Project 1 -->
+                    <article class="project-card shiny-edge reveal-up">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="modern blog.jpeg" alt="ModernBlog" class="project-img">
                         </div>
-                        <p class="project-outcome">Developed a comprehensive blogging platform that provides valuable content to developers and designers, improving knowledge sharing in the tech community.</p>
-                        <a href="https://github.com/Karthikn-code/task-8" class="project-link">View Project</a>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <h3>ModernBlog</h3>
+                                <a href="https://github.com/Karthikn-code/task-8" target="_blank"
+                                    class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <p>A completely responsive blog interface featuring articles on web development, utilizing
+                                modern HTML5/CSS3 and Bootstrap.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Bootstrap 5</span>
+                            </div>
+                        </div>
                     </article>
-                    <article class="project">
-                        <img src="focuspad.jpeg" alt="FocusPad Mockup" class="project-image">
-                        <h3>FocusPad</h3>
-                        <p>A productivity task management app with progress tracking, analytics, and user profiles.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">SVG</span>
+
+                    <!-- Project 2 -->
+                    <article class="project-card shiny-edge reveal-up delay-1">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="focuspad.jpeg" alt="FocusPad" class="project-img">
                         </div>
-                        <p class="project-outcome">Created an intuitive task management tool that helps users stay organized and track their daily progress with visual progress indicators and comprehensive analytics.</p>
-                        <a href="https://github.com/Karthikn-code/Task-2" class="project-link">View Project</a>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <h3>FocusPad</h3>
+                                <a href="https://github.com/Karthikn-code/Task-2" target="_blank"
+                                    class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <p>A productivity task management application featuring progress tracking, clean analytics,
+                                and robust user data handling.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>CSS3</span>
+                                <span>SVG</span>
+                            </div>
+                        </div>
                     </article>
-                    <article class="project">
-                        <img src="rest API.jpeg" alt="Books API Mockup" class="project-image">
-                        <h3>Books API</h3>
-                        <p>A complete REST API for managing a books library with full CRUD operations and web UI.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">REST API</span>
-                            <span class="tech-tag">HTML5</span>
+
+                    <!-- Project 3 -->
+                    <article class="project-card shiny-edge reveal-up delay-2">
+                        <div class="card-glow"></div>
+                        <div class="project-image-wrapper">
+                            <img src="rest API.jpeg" alt="Books API" class="project-img">
                         </div>
-                        <p class="project-outcome">Built a comprehensive backend API with full CRUD functionality, CORS support, and an interactive web interface for testing, demonstrating strong backend development skills.</p>
-                        <a href="https://github.com/Karthikn-code/Task-3" class="project-link">View Project</a>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <h3>Books API</h3>
+                                <a href="https://github.com/Karthikn-code/Task-3" target="_blank"
+                                    class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <p>A high-performance RESTful API managing library data with full CRUD operations and a
+                                clean web interface for testing.</p>
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>REST</span>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p class="contact-intro">Get in touch! I'd love to hear from you.</p>
-                <p class="contact-email">Email: <a href="mailto:karthiknreddy372@gmail.com">karthiknreddy372@gmail.com</a></p>
-
-                
+        <!-- Gradient CTA Section -->
+        <section class="cta-gradient-section">
+            <div class="cta-content reveal-up">
+                <div class="cta-badge">
+                    <i class="fas fa-briefcase"></i> Open for Opportunities
+                </div>
+                <h2 class="cta-title">Let's Build Something Great<br>Together</h2>
+                <p class="cta-desc">I'm actively seeking internship and entry-level opportunities where I can contribute
+                    to impactful projects, work with talented teams, and continue growing as a developer.</p>
+                <div class="cta-buttons-wrapper">
+                    <a href="contact.html" class="btn-cta-white">Get In Touch <i class="fas fa-arrow-right"></i></a>
+                    <a href="karthik%20resume.pdf" target="_blank" class="btn-cta-outline">View Resume</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Mr.Karthik N. made with ❤️| and Codes.</p>
+    <!-- Footer -->
+    <footer class="no-top-margin">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#" class="logo">Karthik N<span>.</span></a>
+                <p>&copy; 2024 Karthik | Built with ❤️ & code</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/Karthikn-code" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/karthik-n-40146136a/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:karthiknreddy28@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=7"></script>
 </body>
+
 </html>
