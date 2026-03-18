@@ -88,9 +88,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* =========================================
-       4. Navbar blur on scroll
+       4. Navbar scroll effects & Mobile Menu
        ========================================= */
     const navbar = document.querySelector('.navbar');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+            });
+        });
+    }
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 20) {
             navbar.style.background = 'rgba(255, 255, 255, 0.85)';
