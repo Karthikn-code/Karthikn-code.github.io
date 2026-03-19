@@ -1053,7 +1053,7 @@ footer {
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2.5rem;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -1107,12 +1107,11 @@ footer {
 }
 
 .info-value {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #0f172a;
     font-weight: 500;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .availability-alert {
@@ -1713,6 +1712,20 @@ footer {
         text-align: center;
         gap: 2rem;
     }
+
+    /* Contact page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form-panel {
+        padding: 1.5rem;
+    }
+
+    .contact-section {
+        padding: 3rem 0 !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1734,5 +1747,18 @@ footer {
 
     .dark-stat-card {
         padding: 2rem 1rem;
+    }
+
+    /* Contact page small */
+    .contact-title {
+        font-size: 2rem !important;
+    }
+
+    .contact-form-panel {
+        padding: 1.25rem;
+    }
+
+    .info-card {
+        padding: 1rem;
     }
 }
