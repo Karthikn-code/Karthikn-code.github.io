@@ -105,22 +105,27 @@
                     <!-- Right: Form -->
                     <div class="contact-form-panel reveal-up delay-1">
                         <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 1.5rem;">Send Me a Message</h3>
-                        <form action="mailto:karthiknreddy28@gmail.com" method="post" enctype="text/plain">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="97ab13fd-e6cd-4d8b-a4be-b3ac8b9390ea">
+                            <input type="hidden" name="subject" value="New Contact Message from Karthik Portfolio">
+                            <input type="hidden" name="from_name" value="Karthik Portfolio Notification">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                             <div class="form-group">
                                 <label>Name *</label>
-                                <input type="text" placeholder="Your name" required>
+                                <input type="text" name="name" placeholder="Your name" required>
                             </div>
                             <div class="form-group">
                                 <label>Email *</label>
-                                <input type="email" placeholder="your.email@example.com" required>
+                                <input type="email" name="email" placeholder="your.email@example.com" required>
                             </div>
                             <div class="form-group">
                                 <label>Subject *</label>
-                                <input type="text" placeholder="What's this about?" required>
+                                <input type="text" name="message_subject" placeholder="What's this about?" required>
                             </div>
                             <div class="form-group">
                                 <label>Message *</label>
-                                <textarea rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                                <textarea name="message" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
                             </div>
                             <button type="submit" class="btn-submit"><i class="far fa-paper-plane"></i> Send Message</button>
                         </form>

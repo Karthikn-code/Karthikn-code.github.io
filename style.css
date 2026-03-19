@@ -144,7 +144,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 9999;
     background: rgba(255, 255, 255, 0.5);
     /* translucent white */
     backdrop-filter: blur(16px);
@@ -1641,7 +1641,7 @@ footer {
         gap: 2rem;
         transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         box-shadow: -10px 0 30px rgba(0,0,0,0.05);
-        z-index: 99;
+        z-index: 10000;
     }
 
     .nav-links.active {
@@ -1655,7 +1655,7 @@ footer {
         font-size: 1.5rem;
         color: var(--text-primary);
         cursor: pointer;
-        z-index: 101;
+        z-index: 10001;
     }
 
     .nav-links a {
